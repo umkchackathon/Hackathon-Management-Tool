@@ -25,7 +25,7 @@ app.post('/push', function (req, res) {
         from: 'umkchackathonfall2017@gmail.com',
         to: req.body.email,
         subject: 'UMKC Hackathon Fall 2017 - Submission Confirmation',
-        html: req.body.content,
+        html: 'Thank you. Your submission has been received, please hold tight while we evaluate your submission and get back to you.',
     };
     transport.sendMail(mailOptions, function (error, info) {
         if (error) {
@@ -51,7 +51,7 @@ app.post('/reserve', function (req, res) {
     });
 });
 var insertDocument = function(db, data, callback) {
-    db.collection('parkingreservation').insertOne( data, function(err, result) {
+    db.collection('umkchackathon').insertOne( data, function(err, result) {
         if(err)
         {
             res.write("Registration Failed, Error While Registering");
@@ -93,7 +93,7 @@ app.get('/userDetails',function (req,res,next) {
             res.write("Failed, Error while connecting to Database");
             res.end();
         }
-        db.collection('parkingreservation',function (err,collection) {
+        db.collection('umkchackathon',function (err,collection) {
             collection.find().toArray(function (err,item) {
                 if(err)
                 {

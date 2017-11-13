@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    setCountdownInfo(new Date('11/12/2017 11:59:59 PM'));
+    setCountdownInfo(new Date('11/16/2017 5:30:00 PM'));
     window.setInterval(function(){
-        setCountdownInfo(new Date('11/12/2017 11:59:59 PM'));
+        setCountdownInfo(new Date('11/16/2017 5:30:00 PM'));
     }, 1000);
 });
 

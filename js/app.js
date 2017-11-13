@@ -34,7 +34,6 @@ hack.controller('events', ['$scope', '$location', '$window','$http', function($s
             }
         }
         $http.post('http://127.0.0.1:8081/reserve',doc).then(function (response) {
-            alert('success');
             var d = {};
             d.email = doc.emailid;
             console.log(doc.emailid);
