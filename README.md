@@ -5,5 +5,11 @@ Online Hackathon tool is an online web application portal where user can registe
 	-->Organizers, Judges and Peer Team members can view registered and submitted team data through this tool and can easily evaluate from there.
 	-->One Stop Shop for all the information related to Hackathon like Use Cases, Rules, Judging criteria, Sponsors etc.,
 	-->Easily accessible on any device and browsers.
+	
+Contributors:
+
+1. Nageswara Rao Nandigam
+2. Syed Moin
+3. Devender Sarda
 
 Hosted Link: https://umkchackathon.github.io/
